@@ -10,7 +10,7 @@ func main() {
 	var c float64
 	var k float64
 
-	fmt.Println("Escolha o tipo da temperatura passada:\n1 - Kelvi\n2 - Fahnehei\n3 - Celsiu")
+	fmt.Println("Escolha o tipo da temperatura passada:\n1 - Kelvin\n2 - Fahnehei\n3 - Celsiu")
 	fmt.Scanf("%d", &tempType)
 	fmt.Println("Valor da temperatura:")
 	fmt.Scanf("%g", &tempValue)
