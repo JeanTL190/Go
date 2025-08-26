@@ -1,0 +1,13 @@
+{
+  "name": "container_go",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "go", 
+  "workspaceFolder": "/usr/src/app",
+  "extensions": ["ms-vscode.go"],
+  "settings": {
+    "go.useLanguageServer": true,
+    "go.formatTool": "goimports",
+    "editor.formatOnSave": true
+  },
+  "remoteUser": "root"
+}

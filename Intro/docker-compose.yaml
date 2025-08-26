@@ -1,0 +1,19 @@
+networks:
+  app-network:
+    driver: bridge
+
+
+services:
+  go:
+    image: golang:1.25
+    container_name: container_go
+    working_dir: /usr/src/app
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - app-network
+    stdin_open: true # Mantém o stdin aberto
+    tty: true         # Permite usar o terminal interativo
+    command: bash     # Substitui o comando padrão pelo Bash
